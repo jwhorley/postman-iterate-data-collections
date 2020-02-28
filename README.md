@@ -6,7 +6,8 @@ Documentaion and "how-to" use Postman to loop over a collection of API calls.  P
 
 **Problem**
 
-1. Working in Getaround's fleet management too, Fleetio - I needed to remove a very large (nearly 70,000) service entry data points that were inaccurate.  Fleetio does not support a bulk .csv import to "update" / PATCH these entries - therefore I needed to remove all of the bad data and re-write the new data that I constructed w/in a Google Sheet.
+1. Working in Getaround's fleet management too, Fleetio - I needed to remove a very large (nearly 70,000) service entry data points that were inaccurate.  
+Fleetio does not support a bulk .csv import to "update" / PATCH these entries - therefore I needed to remove all of the bad data using their API, before being able to re-write the new (correct) data later on.
 
 2. Using the software UI - it would take forever to delete these entries, even with account owner permissions.  NOTE: in order to perform this delete action - the user's API token must also have permissions to delete service entires.  The maximum bulk delete a user can perform w/in the UI is 200 entries at one time...
 
