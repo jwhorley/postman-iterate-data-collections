@@ -13,5 +13,6 @@ This first example is going to be a *single, linear loop*; we'll be deleting a l
 through the Fleetio API - which supports a {{id}} specific DELETE endpoint in their API. 
 
 ### First: Create a Collection
-Do this inside of your choosen environment - (environment setup and variables not covered here but can be found here: https://www.youtube.com/watch?v=wArvaHYdw2I
+Do this inside of your choosen environment.
+(*Postman environment setup and variables not covered here but can be found here*) https://www.youtube.com/watch?v=wArvaHYdw2I
 
