@@ -26,4 +26,5 @@ Links to Use Later in the Doc:
  - Using variables: https://learning.postman.com/docs/postman/variables-and-environments/variables/#using-data-variables
  - Building Workflows: https://learning.postman.com/docs/postman/collection-runs/building-workflows/
  - similar problem i found in Stackoverflow: https://stackoverflow.com/questions/47934314/iteration-through-json-with-multiple-api-calls-for-other-requests
+ - **This is the link to explain setting an environment variable for a subsequent request:** https://community.postman.com/t/how-to-save-a-value-from-response-as-a-environment-variable/11000/5
  
