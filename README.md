@@ -1,4 +1,5 @@
-# postman-collection-loops
+# postman:
+## Iterating through a collection using Collection Runnner and a data file
 
 **Use Case**
 
