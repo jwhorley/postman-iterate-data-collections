@@ -1,20 +1,36 @@
-## Setup
+# Setup
 ✏️ We are going to utilize Postman's Collection Runner feature --> the core function that makes
 everything happen is the **postman.setNextRequest** function. 
 
-> postman.setNextRequest("Request Name");
+## First use case is using a single variable from a data file w/ a single API request (DELETE), to remove a large amount of service entry data within a Fleetio account.
 
-while
-
-> postman.setNextRequest(null);
-will terminate the execution of the iterative loop. 
+**Required commands for our test script:**
 
 This first example is going to be a *single, linear loop*; we'll be deleting a large series of vehicle service entries
 through the Fleetio API - which supports a {{id}} specific DELETE endpoint in their API. 
 
+`postman.setNextRequest("Request Name");`
+
+while
+
+`postman.setNextRequest(null);`
+
+will terminate the execution of the iterative loop. 
+
 ### First: Create a Collection
 Do this inside of your choosen environment.
-(*Postman environment setup and variables not covered here but can be found here*) https://www.youtube.com/watch?v=wArvaHYdw2I
+(*Postman workspace setup and global variables not covered here but can be found here*) https://www.youtube.com/watch?v=wArvaHYdw2I
+
+Once you have your collection created, we'll need to add the API call.  We are going to use a `DELETE` call to remove data at the /service_entry endpoint within Fleetio. 
+
+**Setup your Headers:**
+Follow https://developer.fleetio.com/docs/getting-started
+```
+Authorization: Token [your_API_key]
+Account-Token: [string from your account]
+Content-type: application/json
+```
+URL: https://secure.fleetio.com/api/v1/service_entries/{{id}}
 
 Links to Use Later in the Doc: 
  - https://community.postman.com/t/how-to-loop-through-array-and-use-its-values-in-a-request/6771
