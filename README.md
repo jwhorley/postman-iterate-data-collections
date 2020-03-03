@@ -1,5 +1,5 @@
-# postman:
-## Iterating through a collection using Collection Runnner and a data file
+# postman collection runner:
+## Iterating through a collection using a CSV data file
 
 **Use Case**
 
