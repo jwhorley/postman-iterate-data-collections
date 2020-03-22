@@ -90,9 +90,11 @@ Here is how your runner should look with a single request, after uploading your 
 <img src="/images/Postman-runner.png" width="900" >
 
 Once you have selected your environment (see variables above), you can also preview the data from w/in Postman for a final QA before starting the run: 
+
 <img src="/images/Postman-preview.png" width="450" >
 
 ### Debugging a collection run: 
 Best practices from Postman on reviewing your run, and reviewing any failures [can be found here.](https://learning.postman.com/docs/postman/collection-runs/debugging-a-collection-run/) Personally, I believe using the Postman console is a very effective means for reviewing your requests.  Every request sent via Postman is logged in the console in its raw form, replacing all the variables that you've used in the request. You can also inspect the entire list of request and response headers.  Specifics for [debugging w/ the console can be found here.](https://learning.postman.com/docs/postman/sending-api-requests/debugging-and-logs/) 
  
+ -------
  Suggestions, feedback - please let me know! Thanks for reading.
