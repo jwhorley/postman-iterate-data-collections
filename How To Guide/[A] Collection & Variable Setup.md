@@ -26,7 +26,10 @@ Account-Token: [string from your account]
 Content-type: application/json
 ```
 
-The easiest way to do this w/in your workspace is to set these as environment variables in whatever Postman workspace you are saving this collection. [Postman has great docs](https://learning.postman.com/docs/postman/variables-and-environments/variables/#variable-scopes) on the hierarchy of variables and the variable scope of each. 
+The easiest way to do this w/in your workspace is to set these as environment variables in whatever Postman workspace you are saving this collection. 
+
+
+[Postman has great docs](https://learning.postman.com/docs/postman/variables-and-environments/variables/#variable-scopes) on the hierarchy of variables and the variable scope of each. 
 Understanding variable scope is key to making sure your collection run works properly (which we'll get to next).
 
 <img src="/images/var-scope.jpg" width="350" >
@@ -78,20 +81,20 @@ postman.setNextRequest(null);
 ```
 Here is how my test script looks with all of the pieces together:
 
-[POSTMAN SCRIPT IMAGE]
+<img src="/images/Postman-Test_Script.png" width="900" >
 
 ### Load the Collection Runner:
 Details on starting a collection run can be found in Postman's [Learning Center article, here.](https://learning.postman.com/docs/postman/collection-runs/starting-a-collection-run/). 
 
+Here is how your runner should look with a single request, after uploading your CSV.  In this example my data has 79 rows (including the header), so Postman will run this request 78 times, as indicated in the **iterations** field. 
+<img src="/images/Postman-runner.png" width="900" >
 
+Once you have selected your environment (see variables above), you can also preview the data from w/in Postman for a final QA before starting the run: 
 
-Links to Use Later in the Doc: 
- - https://community.postman.com/t/how-to-loop-through-array-and-use-its-values-in-a-request/6771
- - blog on conditional workflows - (w/ dog example): https://blog.postman.com/2016/03/23/conditional-workflows-in-postman/
- - Ramen example: https://documenter.getpostman.com/view/1559645/RVu4GVAs?version=latest#fa28e3b1-b535-4f42-9aaf-5d52501698f1
- - Looping example: https://blog.postman.com/2018/04/11/looping-through-a-data-file-in-the-postman-collection-runner/
- - Using variables: https://learning.postman.com/docs/postman/variables-and-environments/variables/#using-data-variables
- - Building Workflows: https://learning.postman.com/docs/postman/collection-runs/building-workflows/
- - similar problem i found in Stackoverflow: https://stackoverflow.com/questions/47934314/iteration-through-json-with-multiple-api-calls-for-other-requests
- - **This is the link to explain setting an environment variable for a subsequent request:** https://community.postman.com/t/how-to-save-a-value-from-response-as-a-environment-variable/11000/5
+<img src="/images/Postman-preview.png" width="450" >
+
+### Debugging a collection run: 
+Best practices from Postman on reviewing your run, and reviewing any failures [can be found here.](https://learning.postman.com/docs/postman/collection-runs/debugging-a-collection-run/) Personally, I believe using the Postman console is a very effective means for reviewing your requests.  Every request sent via Postman is logged in the console in its raw form, replacing all the variables that you've used in the request. You can also inspect the entire list of request and response headers.  Specifics for [debugging w/ the console can be found here.](https://learning.postman.com/docs/postman/sending-api-requests/debugging-and-logs/) 
  
+ -------
+ Suggestions, feedback - please let me know! Thanks for reading.
