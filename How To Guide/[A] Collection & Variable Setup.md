@@ -9,7 +9,7 @@ Our first use case is using a single variable from a data file w/ a single API r
 ### Setup Your Data: 
 To follow along with this example, I'm going to use real ID's (which have been removed from my test Fleetio account), so they won't work if you are trying this with your own account-token and API key.  Here's what the csv data looks like - use it as a guide to format your data and modify the request parameters to fit your use case. 
 
-[CSV IMAGE]
+<img src="/images/csv_exampleIDs.png" width="500" >
 
 ### Create a Collection:
 Do this inside of your choosen environment.
