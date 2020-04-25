@@ -27,4 +27,4 @@ Documentaion and "how-to" use Postman to loop over a collection of API calls.  P
  - Fleetio's API docs on Service Entries: https://developer.fleetio.com/docs/delete-service-entry
  - Additional docs on sevice entry line items: https://developer.fleetio.com/v2/docs/reference
  
- *NOTE: For this project I did not care about keeping particular service tasks w/in a service entry - we are going to remove and re-write the entire service w/ a new format.*
+ > NOTE: For this project I did not care about keeping particular service tasks w/in a service entry - we are going to remove and re-write the entire service w/ a new format.
